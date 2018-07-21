@@ -1,0 +1,33 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.add li, .edit li, .rewrite li {
+  display: inline-block;
+}
+
+#area {
+  text-align: center;
+}
+
+#todo, #done {
+  text-align: left;
+  vertical-align: top;
+  border: #ddd 1px solid;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 40vw;
+}
+
+.todo-content, .done-content {
+  border: #fee 10px solid;
+  padding: 5px 10px;
+}
+
+.edit {
+  border-top: #fee 1px solid;
+  padding-top: 10px;
+}
+
+ul {
+  -webkit-padding-start: 0;
+}

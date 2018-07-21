@@ -1,0 +1,45 @@
+<h1>TODO App</h1>
+
+<ul class="add">
+  <%= form_tag("/posts/create") do %>
+    <li>Name<input type="text" name="name"></li>
+    <li>Body<input type="text" name="content"></li>
+    <li><input type="submit" value="Send"></li>
+  <% end %>
+</ul>
+
+<p><%= @message %></p>
+
+<div id="area">
+  <div id="todo">
+    <h2>TODO</h2>
+    <% @todo.each do |post| %>
+    <!-- これを繰り返す -->
+    <div class="todo-content">
+      <h3><%= post.name %></h3>
+      <p><%= post.content %></p>
+      <ul class="edit">
+        <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
+        <li><%= link_to("DONE", "/posts/#{post.id}/move") %></li>
+      </ul>
+    </div>
+    <!-- ここまで -->
+    <% end %>
+  </div>
+
+  <div id="done">
+    <h2>DONE</h2>
+    <% @done.each do |post| %>
+    <!-- これを繰り返す -->
+    <div class="done-content">
+      <h3><%= post.name %></h3>
+      <p><%= post.content %></p>
+      <ul class="edit">
+        <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
+        <li><%= link_to("TODO", "/posts/#{post.id}/move") %></li>
+      </ul>
+    </div>
+    <!-- ここまで -->
+    <% end %>
+  </div>
+</div>

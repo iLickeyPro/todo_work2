@@ -1,0 +1,7 @@
+<ul class="rewrite">
+  <%= form_tag("/posts/#{@post.id}/rewrite") do %>
+    <li>Name<input type="text" name="name" value="<%= @post.name %>"></li>
+    <li>Body<input type="text" name="content" value="<%= @post.content %>"></li>
+    <li><input type="submit" value="Send"></li>
+  <% end %>
+</ul>
