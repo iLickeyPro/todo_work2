@@ -1,8 +1,28 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.add li, .edit li, .rewrite li {
+body {
+  margin: 0;
+  background-color: #fffcfc;
+}
+
+h1 {
+  margin: 0;
+}
+
+.edit li {
   display: inline-block;
+}
+
+.topbar {
+  background-color: #f99;
+  width: 100vw;
+  height: 50px;
+  padding: 20px 50px;
+}
+
+textarea {
+  resize: none;
 }
 
 #area {
@@ -16,6 +36,12 @@
   padding: 10px 20px;
   display: inline-block;
   width: 40vw;
+  background-color: white;
+}
+
+.list {
+  height: calc(100vh - 200px);
+  overflow: scroll;
 }
 
 .todo-content, .done-content {
