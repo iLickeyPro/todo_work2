@@ -12,12 +12,12 @@ class PostsController < ApplicationController
     end
     if flash[:result].present?
       if flash[:result]
-        @message = "Success"
+        @message = "S"
       else
-        @message = "Failure"
+        @message = "F"
       end
     else
-      @message = ""
+      @message = "N"
     end
   end
 
