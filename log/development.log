@@ -4045,3 +4045,568 @@ Processing by PostsController#top as HTML
 Completed 200 OK in 64ms (Views: 59.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-22 10:54:25 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 10:57:31 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:00:57 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/create" for 127.0.0.1 at 2018-07-22 11:01:07 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"evebRZlEfi/w5BOlVEZhVesawR7/lb6lpryFY10AlyS4gmi2IUJUTLVobnVjDRvnRTS1Kx5+aZ5LkTAjoGgDHg==", "name"=>"俺", "content"=>"できた？"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("kind", "name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["kind", 0], ["name", "俺"], ["content", "できた？"], ["created_at", "2018-07-22 02:01:07.793251"], ["updated_at", "2018-07-22 02:01:07.793251"]]
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:01:07 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 86ms (Views: 81.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/create" for 127.0.0.1 at 2018-07-22 11:03:09 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hxw/QEi+Q2rCsnlcTRs/4mdiFMuL3Ban75n/DA/BeETdacyz8LhpCYc+BIx6UEVQyUxg/mo3wZwCtEpM8qnsfg==", "name"=>"ハットトリック", "content"=>"ゴールを３点決めること"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("kind", "name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["kind", 0], ["name", "ハットトリック"], ["content", "ゴールを３点決めること"], ["created_at", "2018-07-22 02:03:09.276908"], ["updated_at", "2018-07-22 02:03:09.276908"]]
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:03:09 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:08:43 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/create" for 127.0.0.1 at 2018-07-22 11:08:57 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lPdH2f58LI5YAPamRQzSVHWCqlFprl19uhImRH+pOSpWgrQqRnoG7R2Mi3ZyR6jm26zeZIhFikZXP5MEgsGtEA==", "name"=>"俺", "content"=>"花壇やんなきゃ"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("kind", "name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["kind", 0], ["name", "俺"], ["content", "花壇やんなきゃ"], ["created_at", "2018-07-22 02:08:57.121736"], ["updated_at", "2018-07-22 02:08:57.121736"]]
+  ↳ app/controllers/posts_controller.rb:30
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:08:57 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:09:36 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:10:00 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:10:40 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2630ms (Views: 2626.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:17:05 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (170.0ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `link_to　' for #<#<Class:0x00007fbddb11c380>:0x00007fbdd5390fe0>
+Did you mean?  link_to):
+    46:             <!-- <button type="button" class="btn btn-primary">DONE</button> -->
+    47:             <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
+    48:             <!-- <li><%= link_to("DONE", "/posts/#{post.id}/move") %></li> -->
+    49:             <%= link_to　"/posts/#{post.id}/move" do %>
+    50:               <button type="button" class="btn btn-primary">DONE</button>
+    51:             <% end %>
+    52:           </div>
+  
+app/views/posts/top.html.erb:49:in `block in _app_views_posts_top_html_erb__2915131120231345171_70226651418140'
+app/views/posts/top.html.erb:40:in `each'
+app/views/posts/top.html.erb:40:in `_app_views_posts_top_html_erb__2915131120231345171_70226651418140'
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:22:08 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 90.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/11/move" for 127.0.0.1 at 2018-07-22 11:22:10 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:22:10.520030"], ["id", 11]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 48ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:22:10 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 87ms (Views: 82.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/10/move" for 127.0.0.1 at 2018-07-22 11:22:13 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.5ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:22:13.992728"], ["id", 10]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:22:14 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 100ms (Views: 93.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/8/move" for 127.0.0.1 at 2018-07-22 11:22:16 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:22:16.811026"], ["id", 8]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:22:16 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 79ms (Views: 75.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:23:35 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:24:31 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 62.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:25:05 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:25:32 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:27:03 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/9/move" for 127.0.0.1 at 2018-07-22 11:27:35 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:27:35.723632"], ["id", 9]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:27:35 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 71ms (Views: 66.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/7/move" for 127.0.0.1 at 2018-07-22 11:27:37 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:27:37.734436"], ["id", 7]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:27:37 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 96ms (Views: 90.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/6/move" for 127.0.0.1 at 2018-07-22 11:28:18 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.4ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:28:18.899245"], ["id", 6]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:28:18 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1/move" for 127.0.0.1 at 2018-07-22 11:28:24 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 1], ["updated_at", "2018-07-22 02:28:24.896672"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:28:24 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 79ms (Views: 72.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:30:51 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 58ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:32:06 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:32:26 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 64ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:33:13 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 61ms (Views: 54.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:33:21 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 69ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:34:02 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 60ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:35:02 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 61ms (Views: 55.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2018-07-22 11:35:07 +0900
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:25
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 63ms (Views: 58.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:36:05 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/11/move" for 127.0.0.1 at 2018-07-22 11:36:07 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 0], ["updated_at", "2018-07-22 02:36:07.247327"], ["id", 11]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:36:07 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 81ms (Views: 74.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/10/move" for 127.0.0.1 at 2018-07-22 11:36:10 +0900
+Processing by PostsController#move as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:43
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "kind" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["kind", 0], ["updated_at", "2018-07-22 02:36:10.022265"], ["id", 10]]
+  ↳ app/controllers/posts_controller.rb:49
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:49
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:36:10 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 70.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2018-07-22 11:36:11 +0900
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:25
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts/9/rewrite" for 127.0.0.1 at 2018-07-22 11:36:19 +0900
+Processing by PostsController#rewrite as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"za6fDeB71INSS/IAGG6xW8p4ZSmnwKRRJJUBT/FJxQSASNjPWr+xrJ5teG3KUP5nEI+kg0xH2ZY2CAqIE89iew==", "name"=>"俺", "content"=>"まだできてない", "id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:38
+  [1m[36mPost Update (0.3ms)[0m  [1m[33mUPDATE "posts" SET "content" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["content", "まだできてない"], ["updated_at", "2018-07-22 02:36:19.470764"], ["id", 9]]
+  ↳ app/controllers/posts_controller.rb:38
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:38
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:36:19 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:36:44 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:37:07 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 63ms (Views: 58.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-07-22 11:37:46 +0900
+Processing by PostsController#top as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/controllers/posts_controller.rb:6
+  Rendering posts/top.html.erb within layouts/application
+  Rendered posts/top.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2643ms (Views: 2639.0ms | ActiveRecord: 0.2ms)
+
+

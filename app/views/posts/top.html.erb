@@ -1,12 +1,33 @@
-<ul class="add">
-  <%= form_tag("/posts/create") do %>
-    <li>名前</li>
-    <li><input type="text" name="name"/></li>
-    <li>Body</li>
-    <li><textarea name="content"></textarea></li>
-    <li><input type="submit" value="Send"/></li>
-  <% end %>
-</ul>
+<div class="modal" id="addListModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <%= form_tag("/posts/create") do %>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Input New TODO List</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul class="add">
+            <div class="form-group">
+              <label for="FormControlText">Name</label>
+              <input type="text" class="form-control" id="FormControlText" rows="3" name="name"/>
+            </div>
+            <div class="form-group">
+              <label for="FormControlTextarea">What should you do?</label>
+              <textarea class="form-control" id="FormControlTextarea" rows="3" name="content"></textarea>
+            </div>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Add</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <p><%= @message %></p>
 
@@ -20,10 +41,16 @@
         <div class="todo-content">
           <h3><%= post.name %></h3>
           <pre><%= post.content %></pre>
-          <ul class="edit">
-            <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
-            <li><%= link_to("DONE", "/posts/#{post.id}/move") %></li>
-          </ul>
+          <div class="container">
+            <div class="text-right">
+              <%= link_to("/posts/#{post.id}") do %>
+                <button type="button" class="btn btn-link col-sm-3">Edit</button>
+              <% end %>
+              <%= link_to("/posts/#{post.id}/move") do %>
+                <button type="button" class="btn btn-success">DONE</button>
+              <% end %>
+            </div>
+          </div>
         </div>
         <!-- ここまで -->
         <% end %>
@@ -38,10 +65,16 @@
         <div class="done-content">
           <h3><%= post.name %></h3>
           <pre><%= post.content %></pre>
-          <ul class="edit">
-            <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
-            <li><%= link_to("TODO", "/posts/#{post.id}/move") %></li>
-          </ul>
+          <div class="container">
+            <div class="text-right">
+              <%= link_to("/posts/#{post.id}") do %>
+                <button type="button" class="btn btn-link col-sm-3">Edit</button>
+              <% end %>
+              <%= link_to("/posts/#{post.id}/move") do %>
+                <button type="button" class="btn btn-warning">TODO</button>
+              <% end %>
+            </div>
+          </div>
         </div>
         <!-- ここまで -->
         <% end %>

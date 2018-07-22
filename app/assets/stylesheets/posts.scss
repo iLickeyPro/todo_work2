@@ -6,25 +6,6 @@ body {
   background-color: #fffcfc;
 }
 
-h1 {
-  margin: 0;
-}
-
-.edit li {
-  display: inline-block;
-}
-
-.topbar {
-  background-color: #f99;
-  width: 100vw;
-  height: 50px;
-  padding: 20px 50px;
-}
-
-textarea {
-  resize: none;
-}
-
 #area {
   text-align: center;
 }
@@ -44,13 +25,4 @@ textarea {
 .todo-content, .done-content {
   border: #fee 10px solid;
   padding: 5px 10px;
-}
-
-.edit {
-  border-top: #fee 1px solid;
-  padding-top: 10px;
-}
-
-ul {
-  -webkit-padding-start: 0;
 }
