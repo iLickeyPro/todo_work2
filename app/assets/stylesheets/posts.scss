@@ -22,7 +22,15 @@ body {
   overflow: scroll;
 }
 
-.todo-content, .done-content {
-  border: #fee 10px solid;
-  padding: 5px 10px;
+.card pre {
+    font-size: 100%;
+}
+
+.card .btn-warning {
+  background-color: #fff;
+}
+
+.card .btn-success {
+  background-color: #fff;
+  color: rgb(33,37,41);
 }
