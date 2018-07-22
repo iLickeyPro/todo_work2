@@ -13,10 +13,13 @@
   <body>
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">TODO App</a>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addListModal">
-        Add
-      </button>
+      <%= link_to("TODO App", "/", class:"navbar-brand") %>
+      <!-- <a class="navbar-brand"> App</a> -->
+      <% if @add then %>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addListModal">
+          Add
+        </button>
+      <% end %>
     </nav>
     <%= yield %>
   </body>

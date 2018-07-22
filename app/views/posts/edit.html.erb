@@ -1,9 +1,21 @@
-<ul class="rewrite">
+<div class="alert" role="alert">
+</div>
+<div class="container">
   <%= form_tag("/posts/#{@post.id}/rewrite") do %>
-    <li>Name</li>
-    <li><input type="text" name="name" value="<%= @post.name %>"/></li>
-    <li>Body</li>
-    <li><textarea name="content"><%= @post.content %></textarea></li>
-    <li><input type="submit" value="Send"/></li>
+    <div class="form-group">
+      <label for="FormControlText">Name</label>
+      <input type="text" class="form-control" id="FormControlText" name="name"
+      value="<%= @post.name %>" required/>
+    </div>
+    <div class="form-group">
+      <label for="FormControlTextarea">What should you do?</label>
+      <textarea class="form-control" id="FormControlTextarea" name="content" rows="3" required><%= @post.content %></textarea>
+    </div>
+    <div class="text-right">
+      <button type="submit" class="btn btn-primary">Update</button>
+      <%= link_to("/") do %>
+        <button type="button" class="btn btn-secondary">Cancel</button>
+      <% end %>
+    </div>
   <% end %>
-</ul>
+</div>

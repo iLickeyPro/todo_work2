@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   def top
+    @add = true
     @todo = []
     @done = []
     posts = Post.all.order(created_at: :desc)
