@@ -3,7 +3,7 @@
     <li>Name</li>
     <li><input type="text" name="name" value="<%= @post.name %>"/></li>
     <li>Body</li>
-    <li><textarea name="content" value="<%= @post.content %>"></li></li>
+    <li><textarea name="content"><%= @post.content %></textarea></li>
     <li><input type="submit" value="Send"/></li>
   <% end %>
 </ul>

@@ -10,40 +10,42 @@
 
 <p><%= @message %></p>
 
-<div id="area">
-  <div id="todo">
-    <h2>TODO</h2>
-    <div class="list">
-      <% @todo.each do |post| %>
-      <!-- これを繰り返す -->
-      <div class="todo-content">
-        <h3><%= post.name %></h3>
-        <pre><%= post.content %></pre>
-        <ul class="edit">
-          <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
-          <li><%= link_to("DONE", "/posts/#{post.id}/move") %></li>
-        </ul>
+<div class="container">
+  <div id="area" class="row">
+    <div id="todo" class="col-sm-6">
+      <h2>TODO</h2>
+      <div class="list">
+        <% @todo.each do |post| %>
+        <!-- これを繰り返す -->
+        <div class="todo-content">
+          <h3><%= post.name %></h3>
+          <pre><%= post.content %></pre>
+          <ul class="edit">
+            <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
+            <li><%= link_to("DONE", "/posts/#{post.id}/move") %></li>
+          </ul>
+        </div>
+        <!-- ここまで -->
+        <% end %>
       </div>
-      <!-- ここまで -->
-      <% end %>
     </div>
-  </div>
 
-  <div id="done">
-    <h2>DONE</h2>
-    <div class="list">
-      <% @done.each do |post| %>
-      <!-- これを繰り返す -->
-      <div class="done-content">
-        <h3><%= post.name %></h3>
-        <pre><%= post.content %></pre>
-        <ul class="edit">
-          <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
-          <li><%= link_to("TODO", "/posts/#{post.id}/move") %></li>
-        </ul>
+    <div id="done" class="col-sm-6">
+      <h2>DONE</h2>
+      <div class="list">
+        <% @done.each do |post| %>
+        <!-- これを繰り返す -->
+        <div class="done-content">
+          <h3><%= post.name %></h3>
+          <pre><%= post.content %></pre>
+          <ul class="edit">
+            <li><%= link_to("Edit", "/posts/#{post.id}") %></li>
+            <li><%= link_to("TODO", "/posts/#{post.id}/move") %></li>
+          </ul>
+        </div>
+        <!-- ここまで -->
+        <% end %>
       </div>
-      <!-- ここまで -->
-      <% end %>
     </div>
   </div>
 </div>
